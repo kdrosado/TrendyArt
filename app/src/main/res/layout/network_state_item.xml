@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/network_state_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_16dp">
+
+    <TextView
+        android:id="@+id/network_state_error_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:padding="@dimen/padding_10dp"
+        android:text="@string/error_msg"
+        android:textColor="@color/colorText" />
+
+    <ImageButton
+        android:id="@+id/network_state_refresh_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:contentDescription="@string/refresh_button_description"
+        android:focusable="true"
+        android:padding="@dimen/padding_10dp"
+        app:srcCompat="@drawable/ic_refresh_24dp" />
+
+    <ProgressBar
+        android:id="@+id/network_state_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10dp" />
+
+</LinearLayout>

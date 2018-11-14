@@ -1,0 +1,42 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin">
+
+    <GridView
+        android:id="@+id/appwidget_fav_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:numColumns="3" />
+
+    <LinearLayout
+        android:id="@+id/empty_msg_for_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/empty_widget_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_8dp"
+            android:contentDescription="@string/appwidget_text"
+            android:drawableBottom="@drawable/ic_favorite_24dp"
+            android:drawablePadding="@dimen/padding_6dp"
+            android:drawableTint="@color/colorAccent"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:padding="@dimen/padding_16dp"
+            android:text="@string/appwidget_text"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/widget_empty_text_size"
+            android:textStyle="italic"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</FrameLayout>
