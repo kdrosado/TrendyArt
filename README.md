@@ -38,5 +38,5 @@ def apiToken = project.hasProperty('token') ? apiToken : (System.getenv('TOKEN')
 - https://support.google.com/analytics/answer/1008080?hl=en
 - https://support.google.com/analytics/answer/1042508
 
--Google Play Services:
--https://developers.google.com/android/guides/setup
+- Google Play Services:
+- https://developers.google.com/android/guides/setup
