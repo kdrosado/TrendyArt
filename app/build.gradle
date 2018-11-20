@@ -5,7 +5,7 @@ android {
         config {
             keyAlias 'key0'
             keyPassword 'capstone'
-            storeFile file('$rootDir/keystore.jks')
+            storeFile file("$rootDir/keystore.jks")
             storePassword 'udacity'
         }
     }
@@ -56,7 +56,7 @@ dependencies {
     implementation 'com.android.support:palette-v7:28.0.0'
     // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
-    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.google.code.gson:gson:2.8.4'
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
     // Okhttp
     implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
@@ -74,9 +74,9 @@ dependencies {
     implementation 'android.arch.persistence.room:runtime:1.1.1'
     annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
     // Google Ads
-    implementation 'com.google.android.gms:play-services-ads:17.1.1'
+    implementation 'com.google.android.gms:play-services-ads:15.0.1'
     // Google Analytics
-    implementation 'com.google.android.gms:play-services-analytics:16.0.5'
+    implementation 'com.google.android.gms:play-services-analytics:16.0.4'
     // Fresco
     implementation 'com.facebook.fresco:fresco:1.10.0'
     implementation 'jp.wasabeef:fresco-processors:2.1.0'

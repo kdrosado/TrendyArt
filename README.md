@@ -1,18 +1,18 @@
 # TrendyArt Android Application
 
-## Capstone Stage 2, Part of the Udacity Android Nanodegree
+Capstone Stage 2, Part of the Udacity Android Nanodegree
 
 ## Configurations
-In order to run this app you will need to create an account at the Artsy API website: https://developers.artsy.net/.
+1. In order to run this app you will need to create an account at the Artsy API website: https://developers.artsy.net/.
 
-Once you have created an account you will get a Client ID & Client Secret ID, which you need to get a token.
+2. Once you have created an account you will get a Client ID & Client Secret ID, which you need to get a token.
 
-To obtain a Token, type the following in a terminal window:
+3. To obtain a Token, type the following in a terminal window:
 curl -v -X POST "https://api.artsy.net/api/tokens/xapp_token?client_id=<yourclientid>&client_secret=<yourclientsecret>"
 
 You will receive a token that will expire in 6 days.
  
-Place your TOKEN inside `build.gradle` 
+4. Place your TOKEN inside `build.gradle` 
 ```gradle
 def apiToken = project.hasProperty('token') ? apiToken : (System.getenv('TOKEN') ?: "\"YOUR_TOKEN\"")
 ```
@@ -40,3 +40,12 @@ def apiToken = project.hasProperty('token') ? apiToken : (System.getenv('TOKEN')
 
 - Google Play Services:
 - https://developers.google.com/android/guides/setup
+
+- Transitions:
+- https://mikescamell.com/shared-element-transitions-part-1/
+- http://yasirameen.com/2016/05/android-activity-transition/
+- https://guides.codepath.com/android/shared-element-activity-transition
+- https://factory.hr/blog/activity-animations-shared-element-transitions-demistified
+- https://developer.android.com/training/transitions/start-activity#java
+- https://willowtreeapps.com/ideas/material-world-animating-l-shared-view-activity-animations/
+- https://www.androiddesignpatterns.com/2015/01/activity-fragment-shared-element-transitions-in-depth-part3a.html

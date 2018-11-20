@@ -8,6 +8,6 @@ public class Utils {
     public static final String BASE_ARTSY_URL = "https://api.artsy.net/";
 
     // TODO: Remove the following strings before committing!!!
-    public static final String CLIENT_ID = "\"YOUR_CLIENT_ID\"";
-    public static final String CLIENT_SECRET = "\"YOUR_CLIENT_SECRET\"";
+    public static final String CLIENT_ID = "\"8b44958976a3ebf9a045\"";
+    public static final String CLIENT_SECRET = "\"f92d8d187945af50714a45d96f04c168\"";
 }

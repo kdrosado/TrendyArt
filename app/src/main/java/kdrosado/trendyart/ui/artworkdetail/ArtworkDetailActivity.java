@@ -1,10 +1,12 @@
 package kdrosado.trendyart.ui.artworkdetail;
 
+import android.app.ActivityOptions;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.CollapsingToolbarLayout;
@@ -524,7 +526,13 @@ public class ArtworkDetailActivity extends AppCompatActivity {
                         //intent.putExtra(ARTWORK_TITLE_KEY, finalTitleString);
                         //intent.putExtra(ARTWORK_ID_KEY, artworkId);
                         intent.putExtra(ARTIST_URL_KEY, mArtistUrl);
-                        startActivity(intent);
+
+                        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                            Bundle bundle = ActivityOptions.makeSceneTransitionAnimation(ArtworkDetailActivity.this).toBundle();
+                            startActivity(intent, bundle);
+                        } else {
+                            startActivity(intent);
+                        }
                     }
                 });
 
