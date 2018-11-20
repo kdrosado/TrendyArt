@@ -1,8 +1,8 @@
-# TrendyArt Android Application
+# TrendyArt 
 
-Capstone Stage 2, Part of the Udacity Android Nanodegree
+TrendyArt is an android application that allows the user to view beautiful art pieces.  It was built for my final Capstone Stage 2 project, which is part of the Udacity Android Nanodegree
 
-## Configurations
+## Set-Up
 1. In order to run this app you will need to create an account at the Artsy API website: https://developers.artsy.net/.
 
 2. Once you have created an account you will get a Client ID & Client Secret ID, which you need to get a token.
