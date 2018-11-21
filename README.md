@@ -2,12 +2,17 @@
 
 TrendyArt is an android application that allows the user to view beautiful art pieces.  It was built for my final Capstone Stage 2 project, which is part of the Udacity Android Nanodegree
 
+## Screenshots
+
+<img src="Screenshot_1542415727.png" width=300 height=500>     <img src="Screenshot_1542415742.png" width=300 height=500>
+<img src="Screenshot_1542415791.png" width=300 height=500>
+
 ## Set-Up
 1. In order to run this app you will need to create an account at the Artsy API website: https://developers.artsy.net/.
 
 2. Once you have created an account you will get a Client ID & Client Secret ID, which you need to get a token.
 
-3. To obtain a Token, type the following in a terminal window:
+3. To obtain a Token, type the following in a terminal window: <br>
 curl -v -X POST "https://api.artsy.net/api/tokens/xapp_token?client_id=<yourclientid>&client_secret=<yourclientsecret>"
 
 You will receive a token that will expire in 6 days.
