@@ -3,10 +3,10 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         config {
-            keyAlias 'key0'
-            keyPassword 'capstone'
-            storeFile file("$rootDir/keystore.jks")
-            storePassword 'udacity'
+            keyAlias 'YOUR_KEY_ALIAS'
+            keyPassword 'YOUR_KEY_PASSWORD'
+            storeFile file("$.../keystore.jks")
+            storePassword 'YOUR_STORE_PASSWORD'
         }
     }
     compileSdkVersion 28
@@ -54,36 +54,49 @@ dependencies {
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.android.support:recyclerview-v7:28.0.0'
     implementation 'com.android.support:palette-v7:28.0.0'
+    
     // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.google.code.gson:gson:2.8.4'
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    
     // Okhttp
     implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+   
     // Picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
+    
     // Lifecycle
     implementation 'android.arch.lifecycle:extensions:1.1.1'
     implementation 'android.arch.lifecycle:viewmodel:1.1.1'
+    
     // Paging
     implementation 'android.arch.paging:runtime:1.0.1'
+   
     // ButterKnife
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor "com.jakewharton:butterknife-compiler:8.8.1"
+    
     // Room
     implementation 'android.arch.persistence.room:runtime:1.1.1'
     annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
+    
     // Google Ads
     implementation 'com.google.android.gms:play-services-ads:15.0.1'
+    
     // Google Analytics
     implementation 'com.google.android.gms:play-services-analytics:16.0.4'
+    
     // Fresco
     implementation 'com.facebook.fresco:fresco:1.10.0'
     implementation 'jp.wasabeef:fresco-processors:2.1.0'
+    
     // Bottom Navigation
     implementation 'com.aurelhubert:ahbottomnavigation:2.1.0'
+    
     // MarkdownView
     implementation 'com.github.tiagohm.MarkdownView:library:0.19.0'
+    
     // Test
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
