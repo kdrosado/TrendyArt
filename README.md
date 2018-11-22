@@ -13,14 +13,17 @@ TrendyArt is an android application that allows the user to view beautiful art p
 2. Once you have created an account you will get a Client ID & Client Secret ID, which you need to get a token.
 
 3. To obtain a Token, type the following in a terminal window: <br>
-curl -v -X POST "https://api.artsy.net/api/tokens/xapp_token?client_id=<yourclientid>&client_secret=<yourclientsecret>"
+curl -v -X POST "https://api.artsy.net/api/tokens/xapp_token?client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET"
 
-You will receive a token that will expire in 6 days.
+(NOTE:You will receive a token that will expire in 6 days.)
  
 4. Place your TOKEN inside `build.gradle` 
 ```gradle
 def apiToken = project.hasProperty('token') ? apiToken : (System.getenv('TOKEN') ?: "\"YOUR_TOKEN\"")
 ```
+5. Place your Client ID and Client Secret inside file Utils.java
+
+6. Place your Google Analytics Tracking ID inside file global_tracker.xml;  To obtain a tracking ID follow these instructions: https://developers.google.com/analytics/devguides/collection/android/v4/
 
 ## Useful Resources
 - https://developer.android.com/topic/libraries/support-library/features#v7-palette
